@@ -1,0 +1,108 @@
+;Program to perform Bubble Sort
+
+.model small
+.stack 100h
+.data 
+var db '---------"Bubble Sort"--------$' 
+var1 db 'Enter the elements : $'                    
+var2 db 'Elements after sorting are : $'  
+var3 db '---------"Output"---------$'         
+array db 10 dup('$')
+.code
+main proc
+mov ax,@data      ;to acess the data segment in code segment
+mov ds,ax
+
+lea dx,var   ;it will store offset address of var in dx    
+mov ah,9     ;it will print string that is declared in var variable
+int 21h
+Call ENTERKEY     ;for carriage return and new line
+
+lea dx,var1  ;it will store offset address of var1 in dx  
+mov ah,9     ;it will print string that is declared in var1 variable
+int 21h
+
+lea si,array          ;it is used for storing address of array
+mov cx,10       ;couter register has 10 values its mean loop wil run 10 times
+;-----"input loop"---------:
+l1:                            
+mov ah,1       ;it will take 10 inputs from user
+int 21h
+mov [si],al     ;it will store input values in array index 1
+inc si        ;it will increment s1 thats mean next input is stored on idex 2
+loop l1       ;this loop will run 10 times
+
+mov di,10       ;for outer loop moves    
+;-----"outer loop"------:
+l2:
+mov cx,di    ;mov 10 in counter register
+dec di       ;dec value of counter registeer by 1
+cmp di,0     
+je print ;if di become 0 then print the array
+
+lea si,array    ;storing offset address of array
+mov dx,10       
+;---------"inner loop"---------:          
+l3:
+mov cx,dx      ;mov 10 in cx
+compare:          
+mov al,[si]     ;store value of index si on al
+mov bl,[si+1]   ;store value of index s++ on bl
+cmp al,bl       ;compare value of al and bl
+jg swap         ;if al is not samller than bl than move to swap
+jbe no_swap     ;if al is smaller than bl then move to no swap
+loop compare   
+
+swap:                
+mov [si],bl           ;move first element to bl
+mov [si+1],al         ;move second element to al 
+inc si                ; increment value of sorce index by 1
+dec dx                ;decrement value of dx by 1
+cmp dx,1
+je l2            ;if dx become 1 then jump on outer loop
+jmp l3           ;jump on inner loop
+
+no_swap:          
+mov [si],al       ;move value of si on al
+mov [si+1],bl     ;move value of si++ on bl
+inc si      ; increment value of sorce index by 1
+dec dx       ;decrement value of dx by 1
+cmp dx,1           
+je l2     ;if dx become 1 then jump on outer loop
+jmp l3    ;jump on inner loop
+loop l2
+;------"print loop"-------------
+print:                             
+Call ENTERKEY
+lea dx,var2        ;it will store offset address of var2 in dx         
+mov ah,9          ;it will print the string that is declared in var2
+int 21h
+Call ENTERKEY
+lea dx,var3     ;it will store offset of var2 in dx
+mov ah,9       ;it will print the string that is declared in var3
+int 21h
+Call ENTERKEY
+mov si,offset array     ;it will store offset of array in si
+mov cx,10              
+;----------"print the array"--------------
+;it will print the array after sorted
+printarray:                         ;for print of array
+mov dl,[si]
+mov ah,2
+int 21h
+inc si
+loop printarray
+mov ah,4ch                       
+int 21h
+main endp
+;PROCEDURE FOR NEWLINE AND CARRIAGE RETURN
+ENTERKEY PROC                 
+mov dx,10
+mov ah,2
+int 21h
+mov dx,13
+mov ah,2
+int 21h
+RET
+ENTERKEY ENDP
+end main                                                     
