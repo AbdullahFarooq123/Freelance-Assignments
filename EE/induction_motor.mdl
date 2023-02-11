@@ -1,0 +1,3206 @@
+Model {
+  Name			  "induction_motor"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed May 16 00:16:33 2001"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "JBB"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Feb 09 14:42:59 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:15>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "1"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      ComplexToMagnitudeAngle
+      Output		      "Magnitude and angle"
+    }
+    Block {
+      BlockType		      ComplexToRealImag
+      Output		      "Real and imag"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      RealImagToComplex
+      Input		      "Real and imag"
+      ConstantPart	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      OutputSignalType	      "auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "induction_motor"
+    Location		    [6, 82, 1018, 680]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "[0.250980, 0.501961, 0.501961]"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "125"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "3-PHASE INDUCTION MOTOR"
+      Ports		      [0, 11]
+      Position		      [180, 71, 490, 369]
+      ForegroundColor	      "white"
+      BackgroundColor	      "yellow"
+      DropShadow	      on
+      FontName		      "Arial Black"
+      FontSize		      11
+      TreatAsAtomicUnit	      off
+      MaskType		      "Squirrel cage Induction motor"
+      MaskDescription	      "Implements a three-phase asynchronous machine ("
+" squirrel cage).\nThe motor test results (No Load, Blocked rotor & DC stator "
+"resistance test) are used to get the performance characteristics of the motor"
+"."
+      MaskPromptString	      "Nominal Power ( w)|Rated voltage (Volt)|Frequen"
+"cy (Hz)|No. Of poles|Stator connection|Class of Motor|No Load Line current (A"
+"mp)|No Load Line Voltage (Volt)|No Load Power (Watt)|Blocked Rotor Line Curre"
+"nt (Amp)|Blocked Rotor  Line Voltage (Volt)|Blocked Rotor Power (Watt)|Stator"
+" Resistance (From DC Test)"
+      MaskStyleString	      "edit,edit,edit,edit,popup(STAR|DELTA),popup(CLA"
+"SS A|CLASS B|CLASS C|CLASS D),edit,edit,edit,edit,edit,edit,edit"
+      MaskTunableValueString  "off,off,off,off,off,off,off,off,off,off,off,off"
+",off"
+      MaskCallbackString      "||||||||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,,,,,,"
+      MaskVariables	      "w=@1;v=@2;f=@3;P=@4;c=@5;m=@6;I_NL=@7;V_NL=@8;P"
+"_NL=@9;I_BR=@10;V_BR=@11;P_BR=@12;r1=@13;"
+      MaskInitialization      "switch c\ncase 1\n    s = 3;\n    d = 1;\ncase "
+"2\n    s=1;\n    d=3;\nend\nswitch m\ncase 1\n	m=0.5;\ncase 2\n"
+"	m=0.4;\ncase 3\n	m=0.3\ncase 4\n	m=0.5\nend"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "3*746|415|50|4|DELTA|CLASS A|3.04|415|232|5|84|"
+"433|7.5"
+      System {
+	Name			"3-PHASE INDUCTION MOTOR"
+	Location		[6, 82, 1001, 680]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"lightBlue"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"97"
+	Block {
+	  BlockType		  Constant
+	  Name			  "BLOCKED ROTOR CURRENT"
+	  Position		  [65, 240, 95, 270]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "I_BR"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "BLOCKED ROTOR POWER"
+	  Position		  [65, 150, 95, 180]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "P_BR"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "BLOCKED ROTOR VOLTAGE"
+	  Position		  [65, 195, 95, 225]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "V_BR"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "CALCULATION OF TORQUE"
+	  Ports			  [7, 3]
+	  Position		  [745, 394, 820, 476]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "CALCULATION OF TORQUE"
+	    Location		    [2, 78, 1022, 684]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "yellow"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "r2'"
+	      Position		      [15, 60, 45, 75]
+	      Orientation	      "down"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "s"
+	      Position		      [15, 93, 45, 107]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Rth"
+	      Position		      [15, 138, 45, 152]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Xth"
+	      Position		      [15, 218, 45, 232]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x2'"
+	      Position		      [15, 253, 45, 267]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "|V|2"
+	      Position		      [15, 283, 45, 297]
+	      Port		      "6"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ws"
+	      Position		      [20, 318, 50, 332]
+	      Port		      "7"
+	    }
+	    Block {
+	      BlockType		      Math
+	      Name		      "Math\nFunction1"
+	      Ports		      [1, 1]
+	      Position		      [270, 140, 300, 170]
+	      Operator		      "square"
+	    }
+	    Block {
+	      BlockType		      Math
+	      Name		      "Math\nFunction2"
+	      Ports		      [1, 1]
+	      Position		      [265, 220, 295, 250]
+	      Operator		      "square"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "add"
+	      Ports		      [2, 1]
+	      Position		      [335, 205, 375, 245]
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "calc r2'/s"
+	      Ports		      [2, 1]
+	      Position		      [110, 70, 150, 110]
+	      Inputs		      "*/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "r2'/s1"
+	      Ports		      [4, 1]
+	      Position		      [520, 184, 575, 251]
+	      Inputs		      "**//"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "rth+rw2'/s"
+	      Ports		      [2, 1]
+	      Position		      [200, 135, 240, 175]
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "xth+x2'"
+	      Ports		      [2, 1]
+	      Position		      [200, 215, 240, 255]
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Torque"
+	      Position		      [645, 213, 675, 227]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "r2'/s2"
+	      Position		      [640, 83, 670, 97]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Slip"
+	      Position		      [640, 118, 670, 132]
+	      Port		      "3"
+	    }
+	    Line {
+	      SrcBlock		      "calc r2'/s"
+	      SrcPort		      1
+	      Points		      [175, 0; 5, 0]
+	      Branch {
+		Points			[0, 0]
+		Branch {
+		  Points		  [-155, 0; 0, 75]
+		  DstBlock		  "rth+rw2'/s"
+		  DstPort		  2
+		}
+		Branch {
+		  Points		  [110, 0; 0, 120]
+		  DstBlock		  "r2'/s1"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		DstBlock		"r2'/s2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "rth+rw2'/s"
+	      SrcPort		      1
+	      DstBlock		      "Math\nFunction1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "xth+x2'"
+	      SrcPort		      1
+	      DstBlock		      "Math\nFunction2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Math\nFunction1"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      DstBlock		      "add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Math\nFunction2"
+	      SrcPort		      1
+	      DstBlock		      "add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "add"
+	      SrcPort		      1
+	      DstBlock		      "r2'/s1"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "r2'"
+	      SrcPort		      1
+	      DstBlock		      "calc r2'/s"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "x2'"
+	      SrcPort		      1
+	      Points		      [105, 0; 0, -15]
+	      DstBlock		      "xth+x2'"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "s"
+	      SrcPort		      1
+	      Points		      [0, 25; 80, 0]
+	      Branch {
+		Points			[-35, 0]
+		DstBlock		"calc r2'/s"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[40, 0]
+		DstBlock		"Slip"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Rth"
+	      SrcPort		      1
+	      DstBlock		      "rth+rw2'/s"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Xth"
+	      SrcPort		      1
+	      DstBlock		      "xth+x2'"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "|V|2"
+	      SrcPort		      1
+	      Points		      [420, 0; 0, -95]
+	      DstBlock		      "r2'/s1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "r2'/s1"
+	      SrcPort		      1
+	      DstBlock		      "Torque"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "ws"
+	      SrcPort		      1
+	      Points		      [430, 0; 0, -85]
+	      DstBlock		      "r2'/s1"
+	      DstPort		      4
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "CALCULATION OF Vth & Zth"
+	  Ports			  [6, 5]
+	  Position		  [505, 226, 560, 329]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "CALCULATION OF Vth & Zth"
+	    Location		    [2, 82, 1014, 688]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "115"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "XM"
+	      Position		      [25, 38, 55, 52]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "r1"
+	      Position		      [25, 83, 55, 97]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x1"
+	      Position		      [25, 118, 55, 132]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V"
+	      Position		      [25, 158, 55, 172]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "r2'/s"
+	      Position		      [30, 218, 60, 232]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x2'"
+	      Position		      [30, 258, 60, 272]
+	      Port		      "6"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      Ports		      [2, 1]
+	      Position		      [200, 315, 240, 355]
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add1"
+	      Ports		      [2, 1]
+	      Position		      [565, 270, 605, 310]
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      ComplexToMagnitudeAngle
+	      Name		      "Complex to\nMagnitude-Angle"
+	      Ports		      [1, 2]
+	      Position		      [450, 188, 480, 217]
+	      Output		      "Magnitude and angle"
+	    }
+	    Block {
+	      BlockType		      ComplexToMagnitudeAngle
+	      Name		      "Complex to\nMagnitude-Angle1"
+	      Ports		      [1, 2]
+	      Position		      [670, 278, 700, 307]
+	      Output		      "Magnitude and angle"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      Ports		      [2, 1]
+	      Position		      [460, 420, 500, 460]
+	      Inputs		      "*/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply"
+	      Ports		      [2, 1]
+	      Position		      [200, 245, 240, 285]
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      RealImagToComplex
+	      Name		      "R1+jX1"
+	      Ports		      [2, 1]
+	      Position		      [170, 112, 200, 143]
+	      Input		      "Real and imag"
+	    }
+	    Block {
+	      BlockType		      ComplexToRealImag
+	      Name		      "Rth+jXth"
+	      Ports		      [1, 2]
+	      Position		      [545, 83, 575, 112]
+	      Output		      "Real and imag"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [395, 147, 420, 183]
+	      ShowName		      off
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "cal Vth"
+	      Ports		      [3, 1]
+	      Position		      [335, 185, 375, 225]
+	      Inputs		      "**/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "cal Zth"
+	      Ports		      [3, 1]
+	      Position		      [450, 80, 490, 120]
+	      Inputs		      "**/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      RealImagToComplex
+	      Name		      "jXM"
+	      Ports		      [1, 1]
+	      Position		      [170, 59, 200, 91]
+	      Input		      "Imag"
+	    }
+	    Block {
+	      BlockType		      RealImagToComplex
+	      Name		      "r2'/s+x2'"
+	      Ports		      [2, 1]
+	      Position		      [130, 242, 160, 273]
+	      Input		      "Real and imag"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "rth"
+	      Position		      [745, 68, 775, 82]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "xth"
+	      Position		      [750, 98, 780, 112]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "|VTH|"
+	      Position		      [755, 188, 785, 202]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "|Zin|"
+	      Position		      [760, 283, 790, 297]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Z_angle"
+	      Position		      [770, 343, 800, 357]
+	      Port		      "5"
+	    }
+	    Line {
+	      SrcBlock		      "jXM"
+	      SrcPort		      1
+	      Points		      [0, 0; 25, 0]
+	      Branch {
+		Points			[205, 0]
+		DstBlock		"cal Zth"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 20]
+		Branch {
+		  Points		  [150, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [-115, 0; 0, 110; 60, 0]
+		  Branch {
+		    DstBlock		    "cal Vth"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [0, 50; 10, 0]
+		    Branch {
+		    DstBlock		    "Multiply"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Add"
+		    DstPort		    1
+		    }
+		  }
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "R1+jX1"
+	      SrcPort		      1
+	      Points		      [0, 0; 5, 0]
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"cal Zth"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[5, 0; 0, 50; 5, 0]
+		Branch {
+		  Points		  [15, 0; 0, 55; 315, 0]
+		  DstBlock		  "Add1"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [160, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      Points		      "[0, 225; -105, 0; 0, -70; -70, 0; 0, -1"
+"80; 25, 0; 0, 15]"
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"cal Zth"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, 75]
+		DstBlock		"cal Vth"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "XM"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      DstBlock		      "jXM"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "r1"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      DstBlock		      "R1+jX1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "x1"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      DstBlock		      "R1+jX1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "V"
+	      SrcPort		      1
+	      Points		      [0, 25]
+	      DstBlock		      "cal Vth"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "cal Zth"
+	      SrcPort		      1
+	      DstBlock		      "Rth+jXth"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rth+jXth"
+	      SrcPort		      1
+	      Points		      [0, -15]
+	      DstBlock		      "rth"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rth+jXth"
+	      SrcPort		      2
+	      DstBlock		      "xth"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "cal Vth"
+	      SrcPort		      1
+	      DstBlock		      "Complex to\nMagnitude-Angle"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Complex to\nMagnitude-Angle"
+	      SrcPort		      1
+	      DstBlock		      "|VTH|"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "r2'/s"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 25]
+	      DstBlock		      "r2'/s+x2'"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "x2'"
+	      SrcPort		      1
+	      DstBlock		      "r2'/s+x2'"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "r2'/s+x2'"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, 10]
+	      Branch {
+		Points			[0, 5]
+		DstBlock		"Multiply"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 75]
+		DstBlock		"Add"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Multiply"
+	      SrcPort		      1
+	      Points		      [45, 0; 0, 145; 155, 0]
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 115]
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [0, -190; -135, 0; 0, 50]
+	      DstBlock		      "Add1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Add1"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 5]
+	      DstBlock		      "Complex to\nMagnitude-Angle1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Complex to\nMagnitude-Angle1"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 5]
+	      DstBlock		      "|Zin|"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Complex to\nMagnitude-Angle1"
+	      SrcPort		      2
+	      Points		      [25, 0; 0, 50]
+	      DstBlock		      "Z_angle"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  Ports			  [7, 8]
+	  Position		  [265, 25, 435, 185]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	    Location		    [2, 82, 1014, 688]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "darkGreen"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "96"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "P_NL"
+	      Position		      [50, 13, 80, 27]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V_NL"
+	      Position		      [50, 48, 80, 62]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "I_NL"
+	      Position		      [50, 83, 80, 97]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "P_BR"
+	      Position		      [50, 263, 80, 277]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V_BR"
+	      Position		      [50, 298, 80, 312]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "I_BR"
+	      Position		      [50, 328, 80, 342]
+	      Port		      "6"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "STATOR_RES"
+	      Position		      [45, 448, 75, 462]
+	      Port		      "7"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "BR PF"
+	      Ports		      [2, 1]
+	      Position		      [380, 270, 420, 310]
+	      Inputs		      "*/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "BR_PF ANGLE"
+	      Ports		      [1, 1]
+	      Position		      [470, 275, 500, 305]
+	      Operator		      "acos"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [240, 75, 270, 105]
+	      ShowName		      off
+	      Value		      "3"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      Position		      [225, 330, 255, 360]
+	      ShowName		      off
+	      Value		      "3"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [640, 495, 670, 525]
+	      ShowName		      off
+	      Value		      "m"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      Position		      [55, 145, 85, 175]
+	      ShowName		      off
+	      Value		      "s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant4"
+	      Position		      [280, 515, 310, 545]
+	      Value		      "3"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      Ports		      [2, 1]
+	      Position		      [615, 90, 655, 130]
+	      ShowName		      off
+	      Inputs		      "/*"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide1"
+	      Ports		      [2, 1]
+	      Position		      [625, 175, 665, 215]
+	      ShowName		      off
+	      Inputs		      "/*"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide2"
+	      Ports		      [2, 1]
+	      Position		      [635, 360, 675, 400]
+	      ShowName		      off
+	      Inputs		      "/*"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide3"
+	      Ports		      [2, 1]
+	      Position		      [635, 430, 675, 470]
+	      ShowName		      off
+	      Inputs		      "/*"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide4"
+	      Ports		      [2, 1]
+	      Position		      [710, 430, 750, 470]
+	      ShowName		      off
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Line to Phase transformation"
+	      Ports		      [2, 2]
+	      Position		      [110, 40, 200, 100]
+	      ShowName		      off
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Line to Phase transformation"
+		Location		[213, 132, 473, 349]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "V_NL"
+		  Position		  [15, 78, 45, 92]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "I_NL"
+		  Position		  [85, 173, 115, 187]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  Position		  [25, 25, 55, 55]
+		  Value			  "s"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant4"
+		  Position		  [20, 110, 50, 140]
+		  Value			  "d"
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "PHASE CURRENT"
+		  Ports			  [2, 1]
+		  Position		  [140, 150, 180, 190]
+		  Inputs		  "/*"
+		  ShowAdditionalParam	  on
+		  InputSameDT		  off
+		  OutDataTypeMode	  "double"
+		  OutDataType		  "float('single')"
+		  OutScaling		  "2^-10"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "PHASE VOLT"
+		  Ports			  [2, 1]
+		  Position		  [130, 65, 170, 105]
+		  Inputs		  "/*"
+		  ShowAdditionalParam	  on
+		  InputSameDT		  off
+		  OutDataTypeMode	  "double"
+		  OutDataType		  "float('single')"
+		  OutScaling		  "2^-10"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Math
+		  Name			  "SQRT2"
+		  Ports			  [1, 1]
+		  Position		  [90, 110, 120, 140]
+		  Operator		  "sqrt"
+		}
+		Block {
+		  BlockType		  Math
+		  Name			  "SQRT3"
+		  Ports			  [1, 1]
+		  Position		  [80, 25, 110, 55]
+		  Operator		  "sqrt"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "V_NL_PH"
+		  Position		  [195, 78, 225, 92]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "I_NL_PH"
+		  Position		  [205, 163, 235, 177]
+		  Port			  "2"
+		}
+		Line {
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  DstBlock		  "SQRT3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "SQRT3"
+		  SrcPort		  1
+		  DstBlock		  "PHASE VOLT"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant4"
+		  SrcPort		  1
+		  DstBlock		  "SQRT2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "SQRT2"
+		  SrcPort		  1
+		  DstBlock		  "PHASE CURRENT"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "PHASE VOLT"
+		  SrcPort		  1
+		  DstBlock		  "V_NL_PH"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "V_NL"
+		  SrcPort		  1
+		  Points		  [0, 10]
+		  DstBlock		  "PHASE VOLT"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "PHASE CURRENT"
+		  SrcPort		  1
+		  DstBlock		  "I_NL_PH"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "I_NL"
+		  SrcPort		  1
+		  DstBlock		  "PHASE CURRENT"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply"
+	      Ports		      [3, 1]
+	      Position		      [290, 50, 330, 90]
+	      ShowName		      off
+	      Inputs		      "***"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply1"
+	      Ports		      [2, 1]
+	      Position		      [445, 95, 485, 135]
+	      ShowName		      off
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply2"
+	      Ports		      [2, 1]
+	      Position		      [450, 170, 490, 210]
+	      ShowName		      off
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply3"
+	      Ports		      [3, 1]
+	      Position		      [285, 290, 325, 330]
+	      ShowName		      off
+	      Inputs		      "***"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply4"
+	      Ports		      [2, 1]
+	      Position		      [465, 350, 505, 390]
+	      ShowName		      off
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply5"
+	      Ports		      [2, 1]
+	      Position		      [470, 425, 510, 465]
+	      ShowName		      off
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply6"
+	      Ports		      [3, 1]
+	      Position		      [380, 543, 430, 607]
+	      Inputs		      "***"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "NL_PF ANGLE"
+	      Ports		      [1, 1]
+	      Position		      [450, 45, 480, 75]
+	      Operator		      "acos"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "NO_LOAD PF"
+	      Ports		      [2, 1]
+	      Position		      [365, 40, 405, 80]
+	      Inputs		      "*/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "PHASE VOLT"
+	      Ports		      [2, 1]
+	      Position		      [160, 185, 200, 225]
+	      Inputs		      "/*"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Rated Line voltage"
+	      Position		      [55, 200, 85, 230]
+	      Value		      "v"
+	    }
+	    Block {
+	      BlockType		      Math
+	      Name		      "SQRT1"
+	      Ports		      [1, 1]
+	      Position		      [290, 580, 320, 610]
+	      Operator		      "square"
+	    }
+	    Block {
+	      BlockType		      Math
+	      Name		      "SQRT3"
+	      Ports		      [1, 1]
+	      Position		      [110, 145, 140, 175]
+	      Operator		      "sqrt"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem1"
+	      Ports		      [2, 2]
+	      Position		      [110, 280, 200, 340]
+	      ShowName		      off
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem1"
+		Location		[113, 101, 373, 318]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "V_BR"
+		  Position		  [15, 78, 45, 92]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "I_BR"
+		  Position		  [85, 173, 115, 187]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  Position		  [25, 25, 55, 55]
+		  Value			  "s"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant4"
+		  Position		  [35, 110, 65, 140]
+		  Value			  "d"
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "PHASE CURRENT"
+		  Ports			  [2, 1]
+		  Position		  [140, 150, 180, 190]
+		  Inputs		  "/*"
+		  ShowAdditionalParam	  on
+		  InputSameDT		  off
+		  OutDataTypeMode	  "double"
+		  OutDataType		  "float('single')"
+		  OutScaling		  "2^-10"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "PHASE VOLT"
+		  Ports			  [2, 1]
+		  Position		  [130, 65, 170, 105]
+		  Inputs		  "/*"
+		  ShowAdditionalParam	  on
+		  InputSameDT		  off
+		  OutDataTypeMode	  "double"
+		  OutDataType		  "float('single')"
+		  OutScaling		  "2^-10"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Math
+		  Name			  "SQRT2"
+		  Ports			  [1, 1]
+		  Position		  [90, 110, 120, 140]
+		  Operator		  "sqrt"
+		}
+		Block {
+		  BlockType		  Math
+		  Name			  "SQRT3"
+		  Ports			  [1, 1]
+		  Position		  [80, 25, 110, 55]
+		  Operator		  "sqrt"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "V_BR_PH"
+		  Position		  [195, 78, 225, 92]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "I_BR_PH"
+		  Position		  [205, 163, 235, 177]
+		  Port			  "2"
+		}
+		Line {
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  DstBlock		  "SQRT3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "SQRT3"
+		  SrcPort		  1
+		  DstBlock		  "PHASE VOLT"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant4"
+		  SrcPort		  1
+		  DstBlock		  "SQRT2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "SQRT2"
+		  SrcPort		  1
+		  DstBlock		  "PHASE CURRENT"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "PHASE VOLT"
+		  SrcPort		  1
+		  DstBlock		  "V_BR_PH"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "V_BR"
+		  SrcPort		  1
+		  Points		  [0, 10]
+		  DstBlock		  "PHASE VOLT"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "PHASE CURRENT"
+		  SrcPort		  1
+		  DstBlock		  "I_BR_PH"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "I_BR"
+		  SrcPort		  1
+		  DstBlock		  "PHASE CURRENT"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Subtract"
+	      Ports		      [2, 1]
+	      Position		      [710, 370, 750, 410]
+	      ShowName		      off
+	      Inputs		      "+-"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Subtract1"
+	      Ports		      [2, 1]
+	      Position		      [720, 490, 760, 530]
+	      ShowName		      off
+	      Inputs		      "+-"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Subtract2"
+	      Ports		      [2, 1]
+	      Position		      [500, 565, 540, 605]
+	      Inputs		      "+-"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Specify via dialog"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction"
+	      Ports		      [1, 1]
+	      Position		      [530, 45, 560, 75]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction1"
+	      Ports		      [1, 1]
+	      Position		      [555, 275, 585, 305]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "CORE  RES_R0"
+	      Position		      [820, 103, 850, 117]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "MAGNETISING REACT_XM"
+	      Position		      [825, 188, 855, 202]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ROTOR RES_r2"
+	      Position		      [835, 383, 865, 397]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "STATOR RES_r1"
+	      Position		      [840, 413, 870, 427]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "STATOR LEAKAGE REACT_x1"
+	      Position		      [840, 448, 870, 462]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ROTOR LEAKAGE REACT_x2"
+	      Position		      [840, 488, 870, 502]
+	      Port		      "6"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "v_PH"
+	      Position		      [825, 233, 855, 247]
+	      Port		      "7"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ROTATIONAL LOSS"
+	      Position		      [835, 553, 865, 567]
+	      Port		      "8"
+	    }
+	    Line {
+	      SrcBlock		      "P_NL"
+	      SrcPort		      1
+	      Points		      [230, 0]
+	      Branch {
+		Points			[35, 0]
+		DstBlock		"NO_LOAD PF"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[80, 0; 0, 555]
+		DstBlock		"Subtract2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Multiply"
+	      SrcPort		      1
+	      DstBlock		      "NO_LOAD PF"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "NO_LOAD PF"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		DstBlock		"NL_PF ANGLE"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"Multiply1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      DstBlock		      "CORE  RES_R0"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multiply2"
+	      SrcPort		      1
+	      Points		      [0, -5]
+	      DstBlock		      "Divide1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "NL_PF ANGLE"
+	      SrcPort		      1
+	      DstBlock		      "Trigonometric\nFunction"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide1"
+	      SrcPort		      1
+	      DstBlock		      "MAGNETISING REACT_XM"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "P_BR"
+	      SrcPort		      1
+	      Points		      [280, 0]
+	      DstBlock		      "BR PF"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "BR_PF ANGLE"
+	      SrcPort		      1
+	      DstBlock		      "Trigonometric\nFunction1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide2"
+	      SrcPort		      1
+	      DstBlock		      "Subtract"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Subtract"
+	      SrcPort		      1
+	      DstBlock		      "ROTOR RES_r2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide4"
+	      SrcPort		      1
+	      Points		      [15, 5]
+	      Branch {
+		DstBlock		"STATOR LEAKAGE REACT_x1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 25; -65, 0]
+		DstBlock		"Subtract1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "I_NL"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -5]
+	      DstBlock		      "Line to Phase transformation"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "V_NL"
+	      SrcPort		      1
+	      DstBlock		      "Line to Phase transformation"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Line to Phase transformation"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		DstBlock		"Multiply"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 170; 390, 0; 0, -20]
+		Branch {
+		  DstBlock		  "Divide"
+		  DstPort		  2
+		}
+		Branch {
+		  DstBlock		  "Divide1"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Line to Phase transformation"
+	      SrcPort		      2
+	      Points		      [0, -15; 15, 0]
+	      Branch {
+		Points			[10, 0]
+		Branch {
+		  DstBlock		  "Multiply"
+		  DstPort		  2
+		}
+		Branch {
+		  Points		  [0, 75; 185, 0]
+		  Branch {
+		    Points		    [15, 0]
+		    DstBlock		    "Multiply1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [0, 55]
+		    DstBlock		    "Multiply2"
+		    DstPort		    2
+		  }
+		}
+	      }
+	      Branch {
+		Points			[0, 525]
+		DstBlock		"SQRT1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Multiply"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 100; -150, 0]
+	      DstBlock		      "Multiply2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multiply1"
+	      SrcPort		      1
+	      Points		      [105, 0; 0, -15]
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "V_BR"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      DstBlock		      "Subsystem1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "I_BR"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      DstBlock		      "Subsystem1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem1"
+	      SrcPort		      1
+	      Points		      [0, 5; 5, 0]
+	      Branch {
+		Points			[0, 80; 220, 0]
+		Branch {
+		  DstBlock		  "Multiply4"
+		  DstPort		  2
+		}
+		Branch {
+		  Points		  [0, 75]
+		  DstBlock		  "Multiply5"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		Points			[60, 0]
+		DstBlock		"Multiply3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem1"
+	      SrcPort		      2
+	      Points		      [0, 5; 10, 0; 0, -20; 35, 0]
+	      Branch {
+		DstBlock		"Multiply3"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[10, 0; 0, 55; 310, 0]
+		Branch {
+		  Points		  [50, 0]
+		  DstBlock		  "Divide2"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 75]
+		  DstBlock		  "Divide3"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -20]
+	      DstBlock		      "Multiply3"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Multiply3"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -10]
+	      DstBlock		      "BR PF"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "BR PF"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		DstBlock		"BR_PF ANGLE"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 70]
+		DstBlock		"Multiply4"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction1"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 125; -155, 0]
+	      DstBlock		      "Multiply5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide3"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -10; 5, 0]
+	      Branch {
+		DstBlock		"Divide4"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 60]
+		DstBlock		"Subtract1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, -50]
+	      DstBlock		      "Divide4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "STATOR_RES"
+	      SrcPort		      1
+	      Points		      [105, 0; 0, -35; 60, 0]
+	      Branch {
+		Points			[440, 0]
+		Branch {
+		  Points		  [10, 0]
+		  DstBlock		  "Subtract"
+		  DstPort		  2
+		}
+		Branch {
+		  DstBlock		  "STATOR RES_r1"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 155]
+		DstBlock		"Multiply6"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      DstBlock		      "SQRT3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "SQRT3"
+	      SrcPort		      1
+	      DstBlock		      "PHASE VOLT"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rated Line voltage"
+	      SrcPort		      1
+	      DstBlock		      "PHASE VOLT"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "PHASE VOLT"
+	      SrcPort		      1
+	      Points		      [225, 0; 0, 35]
+	      DstBlock		      "v_PH"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Subtract1"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -15]
+	      DstBlock		      "ROTOR LEAKAGE REACT_x2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant4"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      DstBlock		      "Multiply6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multiply6"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 20]
+	      DstBlock		      "Subtract2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "SQRT1"
+	      SrcPort		      1
+	      DstBlock		      "Multiply6"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Subtract2"
+	      SrcPort		      1
+	      Points		      [135, 0; 0, -25]
+	      DstBlock		      "ROTATIONAL LOSS"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Multiply4"
+	      SrcPort		      1
+	      Points		      [0, 20]
+	      DstBlock		      "Divide2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Multiply5"
+	      SrcPort		      1
+	      Points		      [45, 0; 0, 15]
+	      DstBlock		      "Divide3"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Calculation of ws"
+	  Ports			  [2, 1]
+	  Position		  [155, 335, 195, 395]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Calculation of ws"
+	    Location		    [181, 205, 381, 397]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "f"
+	      Position		      [15, 108, 45, 122]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "P"
+	      Position		      [25, 153, 55, 167]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [35, 29, 80, 61]
+	      Value		      "377.40"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "calculate"
+	      Ports		      [3, 1]
+	      Position		      [80, 125, 120, 165]
+	      Inputs		      "**/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutDataType	      "float('single')"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ws"
+	      Position		      [145, 138, 175, 152]
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [0, 35; -25, 0; 0, 50]
+	      DstBlock		      "calculate"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "f"
+	      SrcPort		      1
+	      Points		      [0, 30]
+	      DstBlock		      "calculate"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "calculate"
+	      SrcPort		      1
+	      DstBlock		      "ws"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "P"
+	      SrcPort		      1
+	      DstBlock		      "calculate"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "FREQUENCY"
+	  Position		  [65, 335, 95, 365]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "f"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "NO LOAD CURRENT"
+	  Position		  [65, 105, 95, 135]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "I_NL"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "NO LOAD POWER"
+	  Position		  [70, 15, 100, 45]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "P_NL"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "NO LOAD VOLTAGE"
+	  Position		  [70, 60, 100, 90]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "V_NL"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "NO. OF POLES"
+	  Position		  [60, 385, 90, 415]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "P"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "SIMULATED SLIP"
+	  Ports			  [0, 1]
+	  Position		  [270, 550, 300, 580]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  SourceBlock		  "simulink/Sources/Ramp"
+	  SourceType		  "Ramp"
+	  slope			  "1"
+	  start			  "0"
+	  X0			  "0.001"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "STATOR CURRENT, POWER & EFFICIENCY"
+	  Ports			  [7, 3]
+	  Position		  [485, 477, 605, 593]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "STATOR CURRENT, POWER & EFFICIENCY"
+	    Location		    [2, 82, 1014, 688]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "yellow"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V_ph"
+	      Position		      [25, 28, 55, 42]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Zin"
+	      Position		      [20, 58, 50, 72]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ws"
+	      Position		      [25, 93, 55, 107]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Rot_loss"
+	      Position		      [25, 130, 55, 145]
+	      Orientation	      "down"
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      Position		      [25, 155, 55, 170]
+	      Orientation	      "down"
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "s"
+	      Position		      [25, 183, 55, 197]
+	      Port		      "6"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Z_angle"
+	      Position		      [20, 298, 50, 312]
+	      Port		      "7"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "1-s"
+	      Ports		      [2, 1]
+	      Position		      [240, 150, 280, 190]
+	      Inputs		      "+-"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [170, 150, 200, 180]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      Position		      [255, 265, 285, 295]
+	      ShowName		      off
+	      Value		      "3"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      Ports		      [2, 1]
+	      Position		      [135, 25, 175, 65]
+	      ShowName		      off
+	      Inputs		      "*/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "P_airgap"
+	      Ports		      [2, 1]
+	      Position		      [125, 95, 165, 135]
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "P_in"
+	      Ports		      [4, 1]
+	      Position		      [340, 225, 380, 265]
+	      Inputs		      "****"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "P_mech"
+	      Ports		      [2, 1]
+	      Position		      [325, 90, 365, 130]
+	      Inputs		      "**"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "P_out"
+	      Ports		      [2, 1]
+	      Position		      [420, 90, 460, 130]
+	      Inputs		      "+-"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "cal Effi"
+	      Ports		      [2, 1]
+	      Position		      [615, 215, 655, 255]
+	      Inputs		      "*/"
+	      ShowAdditionalParam     on
+	      InputSameDT	      off
+	      OutDataTypeMode	      "double"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "pf"
+	      Ports		      [1, 1]
+	      Position		      [125, 290, 155, 320]
+	      Operator		      "cos"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "currnt_I"
+	      Position		      [695, 38, 725, 52]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_P"
+	      Position		      [695, 103, 725, 117]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "effi"
+	      Position		      [700, 163, 730, 177]
+	      Port		      "3"
+	    }
+	    Line {
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [60, 0; -25, 0]
+	      Branch {
+		Points			[0, 90; 90, 0; 0, 105]
+		DstBlock		"P_in"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[30, 0]
+		DstBlock		"currnt_I"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [0, -5]
+	      DstBlock		      "1-s"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "P_airgap"
+	      SrcPort		      1
+	      Points		      [70, 0; 0, -15]
+	      DstBlock		      "P_mech"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "1-s"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -50]
+	      DstBlock		      "P_mech"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "P_mech"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -10]
+	      DstBlock		      "P_out"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, -10; 25, 0]
+	      DstBlock		      "P_in"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "pf"
+	      SrcPort		      1
+	      Points		      [0, -55]
+	      DstBlock		      "P_in"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "P_out"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      Branch {
+		Points			[0, 115]
+		DstBlock		"cal Effi"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"out_P"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "P_in"
+	      SrcPort		      1
+	      DstBlock		      "cal Effi"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "V_ph"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		DstBlock		"Divide"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 195]
+		DstBlock		"P_in"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "ws"
+	      SrcPort		      1
+	      Points		      [0, 5]
+	      DstBlock		      "P_airgap"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rot_loss"
+	      SrcPort		      1
+	      Points		      [0, -5; 365, 0]
+	      DstBlock		      "P_out"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      Points		      [70, 0]
+	      DstBlock		      "P_airgap"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "s"
+	      SrcPort		      1
+	      Points		      [165, 0]
+	      DstBlock		      "1-s"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Zin"
+	      SrcPort		      1
+	      Points		      [0, -10]
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "cal Effi"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      DstBlock		      "effi"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Z_angle"
+	      SrcPort		      1
+	      DstBlock		      "pf"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "STATOR RESISTANCE"
+	  Position		  [65, 290, 95, 320]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Value			  "r1"
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "|Vth2|"
+	  Ports			  [1, 1]
+	  Position		  [595, 265, 625, 295]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Operator		  "square"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MAGNETISING REACTANCE (XM)"
+	  Position		  [900, 58, 930, 72]
+	  FontName		  "Arial"
+	  FontSize		  11
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "CORE LOSS RESISTANCE (R0)"
+	  Position		  [900, 28, 930, 42]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "STATOR RESISTANCE (r1)"
+	  Position		  [905, 128, 935, 142]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "STATOR REACTANCE (x1)"
+	  Position		  [910, 158, 940, 172]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ROTOR RESISTANCE REFRD TO STATOR (r2')"
+	  Position		  [900, 93, 930, 107]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ROTOR REACTANCE REFRD TO STATOR (x2')"
+	  Position		  [910, 188, 940, 202]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "TORQUE"
+	  Position		  [925, 358, 955, 372]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "7"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "STATOR CURRENT"
+	  Position		  [930, 488, 960, 502]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "8"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "OUTPUT POWER"
+	  Position		  [935, 528, 965, 542]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "9"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "EFFICIENCY"
+	  Position		  [935, 568, 965, 582]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "10"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "SLIP"
+	  Position		  [930, 453, 960, 467]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Port			  "11"
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  1
+	  DstBlock		  "CORE LOSS RESISTANCE (R0)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  2
+	  Points		  [135, 0; 0, 135]
+	  Branch {
+	    Points		    [0, -125]
+	    DstBlock		    "MAGNETISING REACTANCE (XM)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-115, 0; 0, 50]
+	    DstBlock		    "CALCULATION OF Vth & Zth"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  3
+	  Points		  [110, 0; 80, 0]
+	  Branch {
+	    Points		    [15, 0; 0, 330]
+	    DstBlock		    "CALCULATION OF TORQUE"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [185, 0; 0, 25]
+	    DstBlock		    "ROTOR RESISTANCE REFRD TO STATOR (r2')"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  4
+	  Points		  [330, 0; 0, 40; -165, 0]
+	  Branch {
+	    Points		    [0, 70; -115, 0]
+	    DstBlock		    "CALCULATION OF Vth & Zth"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Labels		    [1, 0]
+	    Points		    [5, 0]
+	    DstBlock		    "STATOR RESISTANCE (r1)"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  5
+	  Points		  [150, 0; 0, 50]
+	  Branch {
+	    Points		    [170, 0]
+	    DstBlock		    "STATOR REACTANCE (x1)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-115, 0; 0, 105]
+	    DstBlock		    "CALCULATION OF Vth & Zth"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  6
+	  Points		  [75, 0; 0, 60; -30, 0]
+	  Branch {
+	    DstBlock		    "ROTOR REACTANCE REFRD TO STATOR (x2')"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-20, 0; 0, 120; 15, 0]
+	    Branch {
+	      Points		      [0, 130]
+	      DstBlock		      "CALCULATION OF TORQUE"
+	      DstPort		      5
+	    }
+	    Branch {
+	      DstBlock		      "CALCULATION OF Vth & Zth"
+	      DstPort		      6
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "NO LOAD CURRENT"
+	  SrcPort		  1
+	  Points		  [70, 0; 0, -35]
+	  DstBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "NO LOAD POWER"
+	  SrcPort		  1
+	  Points		  [145, 0]
+	  DstBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BLOCKED ROTOR CURRENT"
+	  SrcPort		  1
+	  Points		  [105, 0; 0, -110]
+	  DstBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "BLOCKED ROTOR POWER"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, -60]
+	  DstBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "BLOCKED ROTOR VOLTAGE"
+	  SrcPort		  1
+	  Points		  [95, 0; 0, -85]
+	  DstBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [2, 0]
+	  SrcBlock		  "NO. OF POLES"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -20]
+	  DstBlock		  "Calculation of ws"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "STATOR RESISTANCE"
+	  SrcPort		  1
+	  Points		  [130, 0; 0, -140]
+	  DstBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF Vth & Zth"
+	  SrcPort		  3
+	  DstBlock		  "|Vth2|"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "SIMULATED SLIP"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [0, -150]
+	    DstBlock		    "CALCULATION OF TORQUE"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "STATOR CURRENT, POWER & EFFICIENCY"
+	    DstPort		    6
+	  }
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF Vth & Zth"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 185]
+	  DstBlock		  "CALCULATION OF TORQUE"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF Vth & Zth"
+	  SrcPort		  2
+	  Points		  [0, 5; 140, 0; 0, 170]
+	  DstBlock		  "CALCULATION OF TORQUE"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [2, 0]
+	  SrcBlock		  "|Vth2|"
+	  SrcPort		  1
+	  Points		  [0, 175]
+	  DstBlock		  "CALCULATION OF TORQUE"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "Calculation of ws"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 100; 90, 0]
+	  Branch {
+	    DstBlock		    "CALCULATION OF TORQUE"
+	    DstPort		    7
+	  }
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "STATOR CURRENT, POWER & EFFICIENCY"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF TORQUE"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -45; -310, 0; 0, 20]
+	  Branch {
+	    Points		    [0, -20]
+	    DstBlock		    "TORQUE"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-140, 0; 0, 165]
+	    DstBlock		    "STATOR CURRENT, POWER & EFFICIENCY"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF TORQUE"
+	  SrcPort		  2
+	  Points		  [20, 0; 0, -60; -355, 0]
+	  DstBlock		  "CALCULATION OF Vth & Zth"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF Vth & Zth"
+	  SrcPort		  4
+	  Points		  [35, 0; 0, 155; -150, 0; 0, 50]
+	  DstBlock		  "STATOR CURRENT, POWER & EFFICIENCY"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "STATOR CURRENT, POWER & EFFICIENCY"
+	  SrcPort		  3
+	  DstBlock		  "EFFICIENCY"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "STATOR CURRENT, POWER & EFFICIENCY"
+	  SrcPort		  1
+	  DstBlock		  "STATOR CURRENT"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "STATOR CURRENT, POWER & EFFICIENCY"
+	  SrcPort		  2
+	  DstBlock		  "OUTPUT POWER"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  7
+	  Points		  [10, 0; 0, 170; 0, 0]
+	  Branch {
+	    Points		    [0, 0; 0, -40]
+	    DstBlock		    "CALCULATION OF Vth & Zth"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, 25; -65, 0; 0, 140]
+	    DstBlock		    "STATOR CURRENT, POWER & EFFICIENCY"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF Vth & Zth"
+	  SrcPort		  5
+	  Points		  [115, 0; 0, 290; -255, 0; 0, -30]
+	  DstBlock		  "STATOR CURRENT, POWER & EFFICIENCY"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "CALCULATION OF TORQUE"
+	  SrcPort		  3
+	  DstBlock		  "SLIP"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "NO LOAD VOLTAGE"
+	  SrcPort		  1
+	  Points		  [145, 0]
+	  DstBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "FREQUENCY"
+	  SrcPort		  1
+	  DstBlock		  "Calculation of ws"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CIRCUIT PARAMETER ESTIMATION BLOCK"
+	  SrcPort		  8
+	  Points		  [0, 360]
+	  DstBlock		  "STATOR CURRENT, POWER & EFFICIENCY"
+	  DstPort		  4
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      Ports		      [1]
+      Position		      [610, 75, 745, 105]
+      ShowName		      off
+      FontName		      "Arial Black"
+      FontSize		      12
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display2"
+      Ports		      [1]
+      Position		      [610, 120, 745, 150]
+      ShowName		      off
+      FontName		      "Arial Black"
+      FontSize		      12
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display3"
+      Ports		      [1]
+      Position		      [610, 156, 740, 184]
+      ShowName		      off
+      FontName		      "Arial Black"
+      FontSize		      12
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display4"
+      Ports		      [1]
+      Position		      [615, 195, 740, 225]
+      ShowName		      off
+      FontName		      "Arial Black"
+      FontSize		      12
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display5"
+      Ports		      [1]
+      Position		      [620, 242, 740, 268]
+      ShowName		      off
+      FontName		      "Arial Black"
+      FontSize		      12
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display6"
+      Ports		      [1]
+      Position		      [620, 274, 740, 306]
+      ShowName		      off
+      FontName		      "Arial Black"
+      FontSize		      12
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [3]
+      Position		      [615, 321, 700, 419]
+      ShowName		      off
+      FontName		      "Arial Black"
+      FontSize		      12
+      Location		      [15, 155, 298, 650]
+      Open		      off
+      NumInputPorts	      "3"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			"induction_motor/3-PHASE INDUCTION MOTOR/STATO"
+"R CURRENT, POWER & EFFICIENCY/T:1|induction_motor/3-PHASE INDUCTION MOTOR/STA"
+"TOR CURRENT, POWER & EFFICIENCY/s:1"
+	axes2			""
+	axes3			""
+      }
+      TimeRange		      "1"
+      YMin		      "-6~-5~-5"
+      YMax		      "12~5~5"
+      DataFormat	      "StructureWithTime"
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      1
+      Points		      [50, 0; 0, -5]
+      DstBlock		      "Display1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      2
+      Points		      [0, 15]
+      DstBlock		      "Display2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      3
+      Points		      [75, 0; 0, 25]
+      DstBlock		      "Display3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      4
+      Points		      [0, 10; 105, 0]
+      DstBlock		      "Display4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      5
+      Points		      [85, 0; 0, 65; 25, 0]
+      DstBlock		      "Display5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      6
+      Points		      [65, 0; 0, 70]
+      DstBlock		      "Display6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      7
+      Points		      [50, 0; 0, 95]
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      8
+      Points		      [40, 0; 0, 100]
+      DstBlock		      "Scope"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "3-PHASE INDUCTION MOTOR"
+      SrcPort		      9
+      Points		      [30, 0; 0, 105]
+      DstBlock		      "Scope"
+      DstPort		      3
+    }
+  }
+}
